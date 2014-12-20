@@ -6,6 +6,29 @@ using System.Windows.Forms;
 
 namespace Small_Business_Application__PC_Prototype_A1_
 {
+    public class Calc
+    {
+        public double Add(double x, double y)
+        {
+            double sum = x + y;
+            return sum;
+        }
+        public double Subtract(double x, double y)
+        {
+            double sum = x - y;
+            return sum;
+        }
+        public double Multiply(double x, double y)
+        {
+            double sum = x * y;
+            return sum;
+        }
+        public double Divide(double x, double y)
+        {
+            double sum = x / y;
+            return sum;
+        }
+    }
     static class Program
     {
         /// <summary>
@@ -16,7 +39,7 @@ namespace Small_Business_Application__PC_Prototype_A1_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MenuForm());
         }
     }
 }
